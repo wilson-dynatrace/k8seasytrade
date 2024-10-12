@@ -33,4 +33,9 @@ echo "[post-create] start" >> ~/status
 kind create cluster --config .devcontainer/kind-cluster.yml --wait 300s
 #chmod +x .devcontainer/deployment.sh && .devcontainer/deployment.sh
 
+kubectl create namespace easytrade
+git clone https://github.com/Dynatrace/easytrade.git
+kubectl -n easytrade apply -f ./easytrade/kubernetes-manifests
+
+
 echo "[post-create] complete" >> ~/status
