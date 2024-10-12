@@ -1,4 +1,4 @@
-<H1>Dynatrace Hands-on Workshop: Kubernetes Basic with easyTrade</H1>
+>Dynatrace Hands-on Workshop: Kubernetes Basic with easyTrade
 
-<p>In this hands-on workshop, you will run a Kubernetes cluster with a demo application, and setup Dynatrace operator to collect the telemetry data.</p>
+In this hands-on workshop, you will run a Kubernetes cluster with a demo application, and setup Dynatrace operator to collect the telemetry data.
 
