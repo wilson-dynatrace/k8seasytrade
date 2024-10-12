@@ -1,12 +1,12 @@
 apiVersion: kind.x-k8s.io/v1alpha4
 kind: Cluster
-name: kind
+name: dthow
 nodes:
 - role: control-plane
   image: kindest/node:v1.30.0
   kubeadmConfigPatches:
   - |
-    kind: InitConfiguration
+    dthow: InitConfiguration
     nodeRegistration:
       kubeletExtraArgs:
         node-labels: "ingress-ready=true"
