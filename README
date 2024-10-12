@@ -2,3 +2,40 @@
 
 In this hands-on workshop, you will run a Kubernetes cluster with a demo application, and setup Dynatrace operator to collect the telemetry data.
 
+## Usefull commands
+    
+Show all namesace
+
+    kubectl get ns
+    
+Service kubernetes 
+
+    kubectl -n easytrade get svc
+
+Delete All pods (to restart the service)
+
+    kubectl delete --all pods -n easytrade
+    
+Pod dynatrace
+
+    kubectl get pods -n dynatrace
+
+Pod easytrade
+
+    kubectl get pods -n easytrade
+
+Get all pods system
+
+    kubectl get all -n kube-system
+    
+Stop loadgen
+
+    kubectl -n easytrade scale --replicas=0 deployment/loadgen
+
+Restart services easytrade
+
+    kubectl delete --all pods -n easytrade
+
+Deployment pod accountservice
+
+    kubectl rollout restart -n easytrade deployment accountservice
