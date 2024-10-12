@@ -39,3 +39,11 @@ Restart services easytrade
 Deployment pod accountservice
 
     kubectl rollout restart -n easytrade deployment accountservice
+
+Forward port
+
+    kubectl -n easytrade port-forward svc/frontend 3000:3000
+
+Show log
+
+    kubectl -n easytrade logs <podname>
